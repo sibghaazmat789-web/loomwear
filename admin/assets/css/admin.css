@@ -1,0 +1,421 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.admin-container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:260px;
+    background:#111827;
+    color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    overflow-y:auto;
+}
+
+.logo{
+    text-align:center;
+    padding:30px 0;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+.sidebar ul{
+    padding:0 15px;
+}
+
+.sidebar li{
+    margin:8px 0;
+}
+
+.sidebar a{
+    display:block;
+    padding:14px 18px;
+    color:#fff;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#d4af37;
+}
+
+.sidebar i{
+    width:25px;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+/* ===========================
+   MAIN
+=========================== */
+
+.main,
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    min-height:100vh;
+}
+
+/* ===========================
+   TOPBAR
+=========================== */
+
+.topbar{
+    background:#fff;
+    padding:18px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.topbar h2{
+    font-size:24px;
+}
+
+.top-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.top-right input{
+    width:260px;
+    padding:10px 15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.top-right i{
+    font-size:20px;
+    cursor:pointer;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content{
+    padding:30px;
+}
+
+/* ===========================
+   PAGE HEADER
+=========================== */
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.page-header h1{
+    font-size:32px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary{
+    background:#d4af37;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:8px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#d4af37;
+}
+
+button{
+    background:#d4af37;
+    color:#fff;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#d4af37;
+}
+
+/* ===========================
+   DASHBOARD CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card i{
+    font-size:35px;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#666;
+    margin-bottom:12px;
+}
+
+.card h2{
+    font-size:34px;
+}
+
+/* ===========================
+   FILTER BAR
+=========================== */
+
+.filter-bar{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.filter-bar input,
+.filter-bar select{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    background:#fff;
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+table th{
+    background:#111827;
+    color:#fff;
+    padding:16px;
+    text-align:center;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+table tr:hover{
+    background:#f8f8f8;
+}
+
+table img{
+    width:70px;
+    height:90px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+form label{
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+form input,
+form select,
+form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+form textarea{
+    resize:vertical;
+}
+
+/* ===========================
+   BADGES
+=========================== */
+
+.badge{
+    background:#d4af37;
+    color:#fff;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+/* ===========================
+   STOCK
+=========================== */
+
+.stock-green{
+    background:#d4edda;
+    color:#155724;
+    padding:6px 12px;
+    border-radius:20px;
+}
+
+.stock-red{
+    background:#f8d7da;
+    color:#721c24;
+    padding:6px 12px;
+    border-radius:20px;
+}
+
+/* ===========================
+   ACTION LINKS
+=========================== */
+
+table a{
+    color:#333;
+    margin:0 5px;
+    font-size:18px;
+}
+
+table a:hover{
+    color:#d4af37;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1200px){
+
+.cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+    width:220px;
+}
+
+.main,
+.main-content{
+    margin-left:220px;
+    width:calc(100% - 220px);
+}
+.cards{
+    grid-template-columns:1fr;
+}
+
+.topbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.filter-bar{
+    flex-direction:column;
+}
+
+}
+
+@media(max-width:600px){
+
+.sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+}
+
+.main,
+.main-content{
+    margin-left:0;
+    width:100%;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.topbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.filter-bar{
+    flex-direction:column;
+}
+
+}

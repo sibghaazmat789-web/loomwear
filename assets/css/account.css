@@ -1,0 +1,128 @@
+/* ==========================
+   ACCOUNT PAGES
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f8f8;
+    color:#111;
+}
+
+.account-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+}
+
+.account-box{
+    width:100%;
+    max-width:600px;
+    background:#fff;
+    padding:50px;
+    border:1px solid #e5e5e5;
+}
+
+.account-box h1{
+    font-size:34px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.account-box p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.account-box input,
+.account-box select{
+    width:100%;
+    height:52px;
+    padding:0 15px;
+    border:1px solid #ccc;
+    margin-bottom:20px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+    background:#fff;
+}
+
+.account-box input:focus,
+.account-box select:focus{
+    border-color:#111;
+}
+
+.account-box button{
+    width:100%;
+    height:55px;
+    background:#111;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.account-box button:hover{
+    background:#333;
+}
+
+.bottom-text{
+    text-align:center;
+    margin-top:30px;
+}
+
+.bottom-text a{
+    color:#111;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.error-box{
+    background:#ffe5e5;
+    border:1px solid #ffbcbc;
+    padding:15px;
+    margin-bottom:25px;
+}
+
+.error-box p{
+    color:#c70000;
+    margin:5px 0;
+}
+
+.success-box{
+    background:#e9f9e8;
+    border:1px solid #8ed18a;
+    padding:15px;
+    margin-bottom:25px;
+}
+
+.success-box p{
+    color:#1d6f2a;
+}
+
+@media(max-width:768px){
+
+.row{
+    grid-template-columns:1fr;
+}
+
+.account-box{
+    padding:30px;
+}
+
+}

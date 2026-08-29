@@ -1,0 +1,2651 @@
+/* =====================================================
+   LOOMWEAR RESPONSIVE SYSTEM
+   Desktop → Tablet → Mobile
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL RESPONSIVE FIXES
+===================================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   LARGE TABLET / SMALL LAPTOP
+   1200px
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    /* HEADER */
+
+    .header-top {
+        padding: 0 30px;
+        height: 80px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .search-box {
+        width: 330px;
+    }
+
+    .header-icons {
+        gap: 20px;
+    }
+
+
+    /* NAVIGATION */
+
+    .nav-menu {
+        gap: 28px;
+        padding: 0 20px;
+    }
+
+    .nav-menu > li > a {
+        font-size: 18px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 760px;
+    }
+
+    .hero-content {
+        left: 6%;
+        max-width: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+
+    /* FEATURED CATEGORIES */
+
+    .featured-categories {
+        padding: 70px 4%;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .category-card img {
+        height: 400px;
+    }
+
+
+    /* NEW ARRIVALS */
+
+    .new-arrivals {
+        padding: 80px 4%;
+    }
+
+    .product-card {
+        flex: 0 0 calc(33.333% - 19px);
+    }
+
+    .product-image {
+        height: 420px;
+    }
+
+
+    /* SHOP */
+
+    .shop-page {
+        padding: 60px 35px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+
+    /* VIDEO */
+
+    .men-video-ad,
+    .men-video-banner {
+        height: 650px;
+    }
+
+    .video-overlay h2,
+    .video-content h2 {
+        font-size: 48px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLETS
+   992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    /* HEADER */
+
+    .header-top {
+        height: 75px;
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .search-box {
+        width: 270px;
+        height: 44px;
+    }
+
+    .header-icons {
+        gap: 17px;
+    }
+
+    .header-icons a {
+        font-size: 20px;
+    }
+
+
+    /* NAVIGATION */
+
+    .navbar {
+        display: block;
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+
+    .nav-menu {
+        height: 55px;
+        justify-content: flex-start;
+        gap: 28px;
+        padding: 0 25px;
+        width: max-content;
+        min-width: 100%;
+    }
+
+    .nav-menu > li > a {
+        height: 55px;
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+
+    /* MEGA MENU */
+
+    .mega-menu {
+        position: fixed;
+        top: 130px;
+        left: 0;
+        right: 0;
+
+        width: 100vw;
+
+        max-height: calc(100vh - 130px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mega-container {
+        width: 100%;
+        max-width: none;
+
+        padding: 30px;
+
+        grid-template-columns:
+            180px
+            repeat(3, minmax(150px, 1fr))
+            180px;
+
+        gap: 22px;
+    }
+
+    .mega-column h3 {
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+
+    .mega-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .mega-column ul li a {
+        font-size: 14px;
+    }
+
+    .mega-banner {
+        width: 100%;
+    }
+
+    .mega-banner img {
+        height: 260px;
+    }
+
+    .mega-banner h4 {
+        font-size: 15px;
+    }
+
+    .mega-banner p {
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 680px;
+    }
+
+    .hero-content {
+        left: 6%;
+        right: 6%;
+        max-width: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-categories {
+        padding: 65px 4%;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-card img {
+        height: 350px;
+    }
+
+    .category-overlay {
+        padding: 20px;
+    }
+
+    .category-overlay h3 {
+        font-size: 22px;
+    }
+
+
+    /* NEW ARRIVALS */
+
+    .new-arrivals {
+        padding: 70px 4%;
+    }
+
+    .product-card {
+        flex: 0 0 calc(50% - 14px);
+    }
+
+    .product-image {
+        height: 430px;
+    }
+
+
+    /* MEN/WOMEN/GIRLS/BOYS/BABY */
+
+    .men-categories,
+    .men-subcategories,
+    .women-subcategories,
+    .girls-subcategories,
+    .boys-subcategories,
+    .baby-subcategories {
+        padding: 60px 30px;
+    }
+
+    .subcategory-card {
+        width: 190px;
+    }
+
+    .subcategory-card img {
+        width: 190px;
+        height: 270px;
+    }
+
+
+    /* VIDEO ADS */
+
+    .men-video-ad,
+    .men-video-banner,
+    .women-video-banner,
+    .girls-video-banner,
+    .boys-video-banner,
+    .baby-video-banner {
+        height: 520px;
+        margin: 55px 0;
+    }
+
+    .video-overlay,
+    .video-content,
+    .women-video-content,
+    .girls-video-overlay,
+    .boys-video-overlay,
+    .baby-video-overlay {
+        left: 6%;
+        max-width: 430px;
+    }
+
+    .video-overlay h2,
+    .video-content h2,
+    .women-video-content h2,
+    .girls-video-overlay h2,
+    .boys-video-overlay h2,
+    .baby-video-overlay h2 {
+        font-size: 42px;
+    }
+
+
+    /* SHOP */
+
+    .shop-page {
+        padding: 50px 25px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+
+    /* SCHOOL */
+
+    .school-subcategory-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   SMALL TABLETS
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* =================================================
+       HEADER
+    ================================================= */
+
+    .announcement-bar {
+        height: auto;
+        min-height: 36px;
+        padding: 8px 15px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .header-top {
+        height: 70px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
+
+    .search-box {
+        width: 220px;
+        height: 40px;
+    }
+
+    .search-box input {
+        padding: 0 14px;
+        font-size: 13px;
+    }
+
+    .search-box button {
+        width: 45px;
+    }
+
+    .header-icons {
+        gap: 14px;
+    }
+
+    .header-icons a {
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       NAVIGATION
+    ================================================= */
+
+    .navbar {
+        display: block;
+    }
+
+    .nav-menu {
+        height: 50px;
+        gap: 22px;
+        padding: 0 18px;
+    }
+
+    .nav-menu > li > a {
+        height: 50px;
+        font-size: 15px;
+    }
+
+
+    /* =================================================
+       MEGA MENU
+    ================================================= */
+
+    .mega-menu {
+        top: 120px;
+        max-height: calc(100vh - 120px);
+    }
+
+    .mega-container {
+        padding: 25px 20px;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .mega-banner {
+        display: none;
+    }
+
+    .mega-column h3 {
+        font-size: 16px;
+    }
+
+    .mega-column ul li a {
+        font-size: 13px;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+        height: 620px;
+    }
+
+    .hero-content {
+        left: 25px;
+        right: 25px;
+        max-width: 480px;
+    }
+
+    .hero-content span {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.08;
+        margin: 15px 0;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-btn {
+        padding: 13px 25px;
+    }
+
+    .hero-prev,
+    .hero-next {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero-prev {
+        left: 12px;
+    }
+
+    .hero-next {
+        right: 12px;
+    }
+
+
+    /* =================================================
+       SECTION HEADINGS
+    ================================================= */
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading span {
+        font-size: 11px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    /* =================================================
+       FEATURED CATEGORIES
+    ================================================= */
+
+    .featured-categories {
+        padding: 55px 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .category-card img {
+        height: 300px;
+    }
+
+    .category-overlay {
+        padding: 16px;
+    }
+
+    .category-overlay h3 {
+        font-size: 19px;
+    }
+
+
+    /* =================================================
+       NEW ARRIVALS
+    ================================================= */
+
+    .new-arrivals {
+        padding: 60px 20px;
+    }
+
+    .product-track {
+        gap: 15px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .product-image {
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    .product-card h4 {
+        font-size: 14px;
+        margin: 13px 10px 6px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+        margin: 0 10px 6px;
+    }
+
+    .price {
+        font-size: 13px;
+        margin: 0 10px 15px;
+    }
+
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       SUBCATEGORY SECTIONS
+    ================================================= */
+
+    .men-categories,
+    .men-subcategories,
+    .women-subcategories,
+    .girls-subcategories,
+    .boys-subcategories,
+    .baby-subcategories {
+        padding: 50px 20px;
+    }
+
+    .women-subcategories .section-heading h2,
+    .girls-subcategories .section-heading h2,
+    .boys-subcategories .section-heading h2,
+    .baby-subcategories .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .subcategory-grid {
+        gap: 15px;
+    }
+
+    .subcategory-card {
+        width: 170px;
+    }
+
+    .subcategory-card img {
+        width: 170px;
+        height: 230px;
+    }
+
+    .subcategory-card h3 {
+        font-size: 15px;
+    }
+
+
+    /* =================================================
+       VIDEO ADS
+    ================================================= */
+
+    .men-video-ad,
+    .men-video-banner,
+    .women-video-banner,
+    .girls-video-banner,
+    .boys-video-banner,
+    .baby-video-banner {
+        height: 480px;
+        margin: 45px 0;
+    }
+
+    .video-overlay,
+    .video-content,
+    .women-video-content,
+    .girls-video-overlay,
+    .boys-video-overlay,
+    .baby-video-overlay {
+        left: 25px;
+        right: 25px;
+        max-width: 420px;
+    }
+
+    .video-overlay h2,
+    .video-content h2,
+    .women-video-content h2,
+    .girls-video-overlay h2,
+    .boys-video-overlay h2,
+    .baby-video-overlay h2 {
+        font-size: 36px;
+    }
+
+    .video-overlay p,
+    .video-content p,
+    .women-video-content p,
+    .girls-video-overlay p,
+    .boys-video-overlay p,
+    .baby-video-overlay p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    /* =================================================
+       SHOP
+    ================================================= */
+
+    .shop-page {
+        padding: 40px 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    /* =================================================
+       SCHOOL
+    ================================================= */
+
+    .school-subcategories {
+        padding: 45px 20px;
+    }
+
+    .school-subcategory-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* =================================================
+       HEADER
+    ================================================= */
+
+    .announcement-bar {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .header-top {
+        height: 64px;
+        padding: 0 14px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .search-box {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+    }
+
+    .search-box input {
+        display: none;
+    }
+
+    .search-box button {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .header-icons {
+        gap: 12px;
+    }
+
+    .header-icons a {
+        font-size: 17px;
+    }
+
+    .cart-count,
+    .wishlist-count {
+        width: 17px;
+        height: 17px;
+        font-size: 9px;
+        top: -8px;
+        right: -8px;
+    }
+
+
+    /* =================================================
+       NAVIGATION
+    ================================================= */
+
+    .navbar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-menu {
+        height: 46px;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .nav-menu > li > a {
+        height: 46px;
+        font-size: 14px;
+    }
+
+
+    /* =================================================
+       MEGA MENU
+    ================================================= */
+
+    .mega-menu {
+        top: 110px;
+        max-height: calc(100vh - 110px);
+    }
+
+    .mega-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 15px 20px;
+    }
+
+    .mega-banner {
+        display: none;
+    }
+
+    .mega-column {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+    }
+
+    .mega-column:last-child {
+        border-bottom: none;
+    }
+
+    .mega-column h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .mega-column ul {
+        margin-bottom: 15px;
+    }
+
+    .mega-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .mega-column ul li a {
+        font-size: 13px;
+    }
+
+    .mt {
+        margin-top: 18px;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+        height: 560px;
+    }
+
+    .hero-content {
+        left: 18px;
+        right: 18px;
+        top: 55%;
+    }
+
+    .hero-content span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        margin: 12px 0;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+    .hero-prev,
+    .hero-next {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+
+    /* =================================================
+       FEATURED
+    ================================================= */
+
+    .featured-categories {
+        padding: 45px 15px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .category-card img {
+        height: 240px;
+    }
+
+    .category-overlay {
+        padding: 12px;
+    }
+
+    .category-overlay h3 {
+        font-size: 16px;
+    }
+
+
+    /* =================================================
+       NEW ARRIVALS
+    ================================================= */
+
+    .new-arrivals {
+        padding: 50px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .product-track {
+        gap: 10px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .product-image {
+        aspect-ratio: 3 / 4;
+    }
+
+    .product-card h4 {
+        font-size: 13px;
+        margin: 10px 7px 5px;
+    }
+
+    .product-card p {
+        font-size: 11px;
+        margin: 0 7px 5px;
+    }
+
+    .price {
+        font-size: 12px;
+        margin: 0 7px 12px;
+    }
+
+    .badge {
+        top: 8px;
+        left: 8px;
+        padding: 5px 8px;
+        font-size: 9px;
+    }
+
+    .slider-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+
+
+    /* =================================================
+       CATEGORY BUTTONS
+    ================================================= */
+
+    .men-categories {
+        padding: 45px 15px;
+    }
+
+    .category-links {
+        gap: 9px;
+    }
+
+    .category-links a {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       SUBCATEGORIES
+    ================================================= */
+
+    .men-subcategories,
+    .women-subcategories,
+    .girls-subcategories,
+    .boys-subcategories,
+    .baby-subcategories {
+        padding: 45px 15px;
+    }
+
+    .women-subcategories .section-heading h2,
+    .girls-subcategories .section-heading h2,
+    .boys-subcategories .section-heading h2,
+    .baby-subcategories .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .subcategory-grid {
+        gap: 12px;
+        padding-bottom: 12px;
+    }
+
+    .subcategory-card {
+        width: 145px;
+    }
+
+    .subcategory-card img {
+        width: 145px;
+        height: 195px;
+        border-radius: 6px;
+    }
+
+    .subcategory-card h3 {
+        font-size: 13px;
+        margin-top: 9px;
+    }
+
+
+    /* =================================================
+       VIDEO ADS
+    ================================================= */
+
+    .men-video-ad,
+    .men-video-banner,
+    .women-video-banner,
+    .girls-video-banner,
+    .boys-video-banner,
+    .baby-video-banner {
+        height: 430px;
+        margin: 35px 0;
+    }
+
+    .video-overlay,
+    .video-content,
+    .women-video-content,
+    .girls-video-overlay,
+    .boys-video-overlay,
+    .baby-video-overlay {
+        left: 18px;
+        right: 18px;
+        top: 55%;
+        max-width: 340px;
+    }
+
+    .video-overlay h2,
+    .video-content h2,
+    .women-video-content h2,
+    .girls-video-overlay h2,
+    .boys-video-overlay h2,
+    .baby-video-overlay h2 {
+        font-size: 30px;
+        margin: 12px 0;
+    }
+
+    .video-overlay p,
+    .video-content p,
+    .women-video-content p,
+    .girls-video-overlay p,
+    .boys-video-overlay p,
+    .baby-video-overlay p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .video-overlay a,
+    .video-content a,
+    .women-video-content a,
+    .girls-video-overlay a,
+    .boys-video-overlay a,
+    .baby-video-overlay a {
+        padding: 11px 22px;
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       BACK TO SCHOOL
+    ================================================= */
+
+    .back-to-school-video {
+        height: 460px;
+    }
+
+    .school-video {
+        object-position: center center;
+    }
+
+    .school-video-content {
+        left: 18px;
+        right: 18px;
+        bottom: 22px;
+    }
+
+    .school-small-text {
+        font-size: 14px;
+    }
+
+    .school-video-content h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    .school-buttons {
+        gap: 6px;
+    }
+
+    .school-buttons a {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .school-video-controls {
+        right: 12px;
+        bottom: 10px;
+    }
+
+
+    /* =================================================
+       SHOP
+    ================================================= */
+
+    .shop-page {
+        padding: 35px 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+    /* =================================================
+       SCHOOL PAGE
+    ================================================= */
+
+    .school-page-header {
+        padding: 35px 15px 25px;
+    }
+
+    .school-page-header h1 {
+        font-size: 27px;
+    }
+
+    .school-page-header p {
+        font-size: 13px;
+    }
+
+    .school-navigation {
+        justify-content: flex-start;
+        gap: 18px;
+        padding: 16px 15px;
+        overflow-x: auto;
+    }
+
+    .school-navigation a {
+        font-size: 11px;
+        flex-shrink: 0;
+    }
+
+    .school-products {
+        padding: 25px 12px 40px;
+    }
+
+    .school-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .school-product-card h3 {
+        font-size: 12px;
+    }
+
+    .school-product-card p {
+        font-size: 10px;
+    }
+
+    .school-product-price {
+        font-size: 12px;
+    }
+
+
+    /* SCHOOL SUBCATEGORIES */
+
+    .school-subcategories {
+        padding: 40px 15px;
+    }
+
+    .school-subcategory-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .school-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .school-subcategory-info {
+        padding: 10px 3px;
+    }
+
+    .school-subcategory-info h3 {
+        font-size: 13px;
+    }
+
+    .school-subcategory-info span {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .header-top {
+        padding: 0 10px;
+    }
+
+    .header-icons {
+        gap: 9px;
+    }
+
+    .header-icons a {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .category-card img {
+        height: 210px;
+    }
+
+    .subcategory-card {
+        width: 135px;
+    }
+
+    .subcategory-card img {
+        width: 135px;
+        height: 180px;
+    }
+
+    .product-card h4 {
+        font-size: 12px;
+    }
+
+}/* =====================================================
+   LOOMWEAR RESPONSIVE SYSTEM
+   Desktop → Tablet → Mobile
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL RESPONSIVE FIXES
+===================================================== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   LARGE TABLET / SMALL LAPTOP
+   1200px
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    /* HEADER */
+
+    .header-top {
+        padding: 0 30px;
+        height: 80px;
+    }
+
+    .logo {
+        font-size: 48px;
+    }
+
+    .search-box {
+        width: 330px;
+    }
+
+    .header-icons {
+        gap: 20px;
+    }
+
+
+    /* NAVIGATION */
+
+    .nav-menu {
+        gap: 28px;
+        padding: 0 20px;
+    }
+
+    .nav-menu > li > a {
+        font-size: 18px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 760px;
+    }
+
+    .hero-content {
+        left: 6%;
+        max-width: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 54px;
+    }
+
+
+    /* FEATURED CATEGORIES */
+
+    .featured-categories {
+        padding: 70px 4%;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+
+    .category-card img {
+        height: 400px;
+    }
+
+
+    /* NEW ARRIVALS */
+
+    .new-arrivals {
+        padding: 80px 4%;
+    }
+
+    .product-card {
+        flex: 0 0 calc(33.333% - 19px);
+    }
+
+    .product-image {
+        height: 420px;
+    }
+
+
+    /* SHOP */
+
+    .shop-page {
+        padding: 60px 35px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+
+    /* VIDEO */
+
+    .men-video-ad,
+    .men-video-banner {
+        height: 650px;
+    }
+
+    .video-overlay h2,
+    .video-content h2 {
+        font-size: 48px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLETS
+   992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    /* HEADER */
+
+    .header-top {
+        height: 75px;
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .search-box {
+        width: 270px;
+        height: 44px;
+    }
+
+    .header-icons {
+        gap: 17px;
+    }
+
+    .header-icons a {
+        font-size: 20px;
+    }
+
+
+    /* NAVIGATION */
+
+    .navbar {
+        display: block;
+        overflow-x: auto;
+        overflow-y: visible;
+    }
+
+    .nav-menu {
+        height: 55px;
+        justify-content: flex-start;
+        gap: 28px;
+        padding: 0 25px;
+        width: max-content;
+        min-width: 100%;
+    }
+
+    .nav-menu > li > a {
+        height: 55px;
+        font-size: 17px;
+        white-space: nowrap;
+    }
+
+
+    /* MEGA MENU */
+
+    .mega-menu {
+        position: fixed;
+        top: 130px;
+        left: 0;
+        right: 0;
+
+        width: 100vw;
+
+        max-height: calc(100vh - 130px);
+
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .mega-container {
+        width: 100%;
+        max-width: none;
+
+        padding: 30px;
+
+        grid-template-columns:
+            180px
+            repeat(3, minmax(150px, 1fr))
+            180px;
+
+        gap: 22px;
+    }
+
+    .mega-column h3 {
+        font-size: 17px;
+        margin-bottom: 13px;
+    }
+
+    .mega-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .mega-column ul li a {
+        font-size: 14px;
+    }
+
+    .mega-banner {
+        width: 100%;
+    }
+
+    .mega-banner img {
+        height: 260px;
+    }
+
+    .mega-banner h4 {
+        font-size: 15px;
+    }
+
+    .mega-banner p {
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 680px;
+    }
+
+    .hero-content {
+        left: 6%;
+        right: 6%;
+        max-width: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+
+    /* FEATURED */
+
+    .featured-categories {
+        padding: 65px 4%;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category-card img {
+        height: 350px;
+    }
+
+    .category-overlay {
+        padding: 20px;
+    }
+
+    .category-overlay h3 {
+        font-size: 22px;
+    }
+
+
+    /* NEW ARRIVALS */
+
+    .new-arrivals {
+        padding: 70px 4%;
+    }
+
+    .product-card {
+        flex: 0 0 calc(50% - 14px);
+    }
+
+    .product-image {
+        height: 430px;
+    }
+
+
+    /* MEN/WOMEN/GIRLS/BOYS/BABY */
+
+    .men-categories,
+    .men-subcategories,
+    .women-subcategories,
+    .girls-subcategories,
+    .boys-subcategories,
+    .baby-subcategories {
+        padding: 60px 30px;
+    }
+
+    .subcategory-card {
+        width: 190px;
+    }
+
+    .subcategory-card img {
+        width: 190px;
+        height: 270px;
+    }
+
+
+    /* VIDEO ADS */
+
+    .men-video-ad,
+    .men-video-banner,
+    .women-video-banner,
+    .girls-video-banner,
+    .boys-video-banner,
+    .baby-video-banner {
+        height: 520px;
+        margin: 55px 0;
+    }
+
+    .video-overlay,
+    .video-content,
+    .women-video-content,
+    .girls-video-overlay,
+    .boys-video-overlay,
+    .baby-video-overlay {
+        left: 6%;
+        max-width: 430px;
+    }
+
+    .video-overlay h2,
+    .video-content h2,
+    .women-video-content h2,
+    .girls-video-overlay h2,
+    .boys-video-overlay h2,
+    .baby-video-overlay h2 {
+        font-size: 42px;
+    }
+
+
+    /* SHOP */
+
+    .shop-page {
+        padding: 50px 25px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+
+    /* SCHOOL */
+
+    .school-subcategory-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   SMALL TABLETS
+   768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    /* =================================================
+       HEADER
+    ================================================= */
+
+    .announcement-bar {
+        height: auto;
+        min-height: 36px;
+        padding: 8px 15px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .header-top {
+        height: 70px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
+
+    .search-box {
+        width: 220px;
+        height: 40px;
+    }
+
+    .search-box input {
+        padding: 0 14px;
+        font-size: 13px;
+    }
+
+    .search-box button {
+        width: 45px;
+    }
+
+    .header-icons {
+        gap: 14px;
+    }
+
+    .header-icons a {
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       NAVIGATION
+    ================================================= */
+
+    .navbar {
+        display: block;
+    }
+
+    .nav-menu {
+        height: 50px;
+        gap: 22px;
+        padding: 0 18px;
+    }
+
+    .nav-menu > li > a {
+        height: 50px;
+        font-size: 15px;
+    }
+
+
+    /* =================================================
+       MEGA MENU
+    ================================================= */
+
+    .mega-menu {
+        top: 120px;
+        max-height: calc(100vh - 120px);
+    }
+
+    .mega-container {
+        padding: 25px 20px;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+    .mega-banner {
+        display: none;
+    }
+
+    .mega-column h3 {
+        font-size: 16px;
+    }
+
+    .mega-column ul li a {
+        font-size: 13px;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+        height: 620px;
+    }
+
+    .hero-content {
+        left: 25px;
+        right: 25px;
+        max-width: 480px;
+    }
+
+    .hero-content span {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.08;
+        margin: 15px 0;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-btn {
+        padding: 13px 25px;
+    }
+
+    .hero-prev,
+    .hero-next {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero-prev {
+        left: 12px;
+    }
+
+    .hero-next {
+        right: 12px;
+    }
+
+
+    /* =================================================
+       SECTION HEADINGS
+    ================================================= */
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading span {
+        font-size: 11px;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+
+    /* =================================================
+       FEATURED CATEGORIES
+    ================================================= */
+
+    .featured-categories {
+        padding: 55px 20px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .category-card img {
+        height: 300px;
+    }
+
+    .category-overlay {
+        padding: 16px;
+    }
+
+    .category-overlay h3 {
+        font-size: 19px;
+    }
+
+
+    /* =================================================
+       NEW ARRIVALS
+    ================================================= */
+
+    .new-arrivals {
+        padding: 60px 20px;
+    }
+
+    .product-track {
+        gap: 15px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .product-image {
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    .product-card h4 {
+        font-size: 14px;
+        margin: 13px 10px 6px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+        margin: 0 10px 6px;
+    }
+
+    .price {
+        font-size: 13px;
+        margin: 0 10px 15px;
+    }
+
+    .slider-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       SUBCATEGORY SECTIONS
+    ================================================= */
+
+    .men-categories,
+    .men-subcategories,
+    .women-subcategories,
+    .girls-subcategories,
+    .boys-subcategories,
+    .baby-subcategories {
+        padding: 50px 20px;
+    }
+
+    .women-subcategories .section-heading h2,
+    .girls-subcategories .section-heading h2,
+    .boys-subcategories .section-heading h2,
+    .baby-subcategories .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .subcategory-grid {
+        gap: 15px;
+    }
+
+    .subcategory-card {
+        width: 170px;
+    }
+
+    .subcategory-card img {
+        width: 170px;
+        height: 230px;
+    }
+
+    .subcategory-card h3 {
+        font-size: 15px;
+    }
+
+
+    /* =================================================
+       VIDEO ADS
+    ================================================= */
+
+    .men-video-ad,
+    .men-video-banner,
+    .women-video-banner,
+    .girls-video-banner,
+    .boys-video-banner,
+    .baby-video-banner {
+        height: 480px;
+        margin: 45px 0;
+    }
+
+    .video-overlay,
+    .video-content,
+    .women-video-content,
+    .girls-video-overlay,
+    .boys-video-overlay,
+    .baby-video-overlay {
+        left: 25px;
+        right: 25px;
+        max-width: 420px;
+    }
+
+    .video-overlay h2,
+    .video-content h2,
+    .women-video-content h2,
+    .girls-video-overlay h2,
+    .boys-video-overlay h2,
+    .baby-video-overlay h2 {
+        font-size: 36px;
+    }
+
+    .video-overlay p,
+    .video-content p,
+    .women-video-content p,
+    .girls-video-overlay p,
+    .boys-video-overlay p,
+    .baby-video-overlay p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+
+    /* =================================================
+       SHOP
+    ================================================= */
+
+    .shop-page {
+        padding: 40px 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+
+    /* =================================================
+       SCHOOL
+    ================================================= */
+
+    .school-subcategories {
+        padding: 45px 20px;
+    }
+
+    .school-subcategory-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* =================================================
+       HEADER
+    ================================================= */
+
+    .announcement-bar {
+        font-size: 10px;
+        padding: 7px 10px;
+    }
+
+    .header-top {
+        height: 64px;
+        padding: 0 14px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .search-box {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background: transparent;
+    }
+
+    .search-box input {
+        display: none;
+    }
+
+    .search-box button {
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+    }
+
+    .header-icons {
+        gap: 12px;
+    }
+
+    .header-icons a {
+        font-size: 17px;
+    }
+
+    .cart-count,
+    .wishlist-count {
+        width: 17px;
+        height: 17px;
+        font-size: 9px;
+        top: -8px;
+        right: -8px;
+    }
+
+
+    /* =================================================
+       NAVIGATION
+    ================================================= */
+
+    .navbar {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-menu {
+        height: 46px;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .nav-menu > li > a {
+        height: 46px;
+        font-size: 14px;
+    }
+
+
+    /* =================================================
+       MEGA MENU
+    ================================================= */
+
+    .mega-menu {
+        top: 110px;
+        max-height: calc(100vh - 110px);
+    }
+
+    .mega-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 15px 20px;
+    }
+
+    .mega-banner {
+        display: none;
+    }
+
+    .mega-column {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+    }
+
+    .mega-column:last-child {
+        border-bottom: none;
+    }
+
+    .mega-column h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .mega-column ul {
+        margin-bottom: 15px;
+    }
+
+    .mega-column ul li {
+        margin-bottom: 8px;
+    }
+
+    .mega-column ul li a {
+        font-size: 13px;
+    }
+
+    .mt {
+        margin-top: 18px;
+    }
+
+
+    /* =================================================
+       HERO
+    ================================================= */
+
+    .hero {
+        height: 560px;
+    }
+
+    .hero-content {
+        left: 18px;
+        right: 18px;
+        top: 55%;
+    }
+
+    .hero-content span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        margin: 12px 0;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+    .hero-prev,
+    .hero-next {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+
+    /* =================================================
+       FEATURED
+    ================================================= */
+
+    .featured-categories {
+        padding: 45px 15px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .category-card img {
+        height: 240px;
+    }
+
+    .category-overlay {
+        padding: 12px;
+    }
+
+    .category-overlay h3 {
+        font-size: 16px;
+    }
+
+
+    /* =================================================
+       NEW ARRIVALS
+    ================================================= */
+
+    .new-arrivals {
+        padding: 50px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .product-track {
+        gap: 10px;
+    }
+
+    .product-card {
+        flex: 0 0 calc(50% - 5px);
+    }
+
+    .product-image {
+        aspect-ratio: 3 / 4;
+    }
+
+    .product-card h4 {
+        font-size: 13px;
+        margin: 10px 7px 5px;
+    }
+
+    .product-card p {
+        font-size: 11px;
+        margin: 0 7px 5px;
+    }
+
+    .price {
+        font-size: 12px;
+        margin: 0 7px 12px;
+    }
+
+    .badge {
+        top: 8px;
+        left: 8px;
+        padding: 5px 8px;
+        font-size: 9px;
+    }
+
+    .slider-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .prev {
+        left: 5px;
+    }
+
+    .next {
+        right: 5px;
+    }
+
+
+    /* =================================================
+       CATEGORY BUTTONS
+    ================================================= */
+
+    .men-categories {
+        padding: 45px 15px;
+    }
+
+    .category-links {
+        gap: 9px;
+    }
+
+    .category-links a {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       SUBCATEGORIES
+    ================================================= */
+
+    .men-subcategories,
+    .women-subcategories,
+    .girls-subcategories,
+    .boys-subcategories,
+    .baby-subcategories {
+        padding: 45px 15px;
+    }
+
+    .women-subcategories .section-heading h2,
+    .girls-subcategories .section-heading h2,
+    .boys-subcategories .section-heading h2,
+    .baby-subcategories .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .subcategory-grid {
+        gap: 12px;
+        padding-bottom: 12px;
+    }
+
+    .subcategory-card {
+        width: 145px;
+    }
+
+    .subcategory-card img {
+        width: 145px;
+        height: 195px;
+        border-radius: 6px;
+    }
+
+    .subcategory-card h3 {
+        font-size: 13px;
+        margin-top: 9px;
+    }
+
+
+    /* =================================================
+       VIDEO ADS
+    ================================================= */
+
+    .men-video-ad,
+    .men-video-banner,
+    .women-video-banner,
+    .girls-video-banner,
+    .boys-video-banner,
+    .baby-video-banner {
+        height: 430px;
+        margin: 35px 0;
+    }
+
+    .video-overlay,
+    .video-content,
+    .women-video-content,
+    .girls-video-overlay,
+    .boys-video-overlay,
+    .baby-video-overlay {
+        left: 18px;
+        right: 18px;
+        top: 55%;
+        max-width: 340px;
+    }
+
+    .video-overlay h2,
+    .video-content h2,
+    .women-video-content h2,
+    .girls-video-overlay h2,
+    .boys-video-overlay h2,
+    .baby-video-overlay h2 {
+        font-size: 30px;
+        margin: 12px 0;
+    }
+
+    .video-overlay p,
+    .video-content p,
+    .women-video-content p,
+    .girls-video-overlay p,
+    .boys-video-overlay p,
+    .baby-video-overlay p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .video-overlay a,
+    .video-content a,
+    .women-video-content a,
+    .girls-video-overlay a,
+    .boys-video-overlay a,
+    .baby-video-overlay a {
+        padding: 11px 22px;
+        font-size: 12px;
+    }
+
+
+    /* =================================================
+       BACK TO SCHOOL
+    ================================================= */
+
+    .back-to-school-video {
+        height: 460px;
+    }
+
+    .school-video {
+        object-position: center center;
+    }
+
+    .school-video-content {
+        left: 18px;
+        right: 18px;
+        bottom: 22px;
+    }
+
+    .school-small-text {
+        font-size: 14px;
+    }
+
+    .school-video-content h2 {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+
+    .school-buttons {
+        gap: 6px;
+    }
+
+    .school-buttons a {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .school-video-controls {
+        right: 12px;
+        bottom: 10px;
+    }
+
+
+    /* =================================================
+       SHOP
+    ================================================= */
+
+    .shop-page {
+        padding: 35px 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+
+    /* =================================================
+       SCHOOL PAGE
+    ================================================= */
+
+    .school-page-header {
+        padding: 35px 15px 25px;
+    }
+
+    .school-page-header h1 {
+        font-size: 27px;
+    }
+
+    .school-page-header p {
+        font-size: 13px;
+    }
+
+    .school-navigation {
+        justify-content: flex-start;
+        gap: 18px;
+        padding: 16px 15px;
+        overflow-x: auto;
+    }
+
+    .school-navigation a {
+        font-size: 11px;
+        flex-shrink: 0;
+    }
+
+    .school-products {
+        padding: 25px 12px 40px;
+    }
+
+    .school-product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .school-product-card h3 {
+        font-size: 12px;
+    }
+
+    .school-product-card p {
+        font-size: 10px;
+    }
+
+    .school-product-price {
+        font-size: 12px;
+    }
+
+
+    /* SCHOOL SUBCATEGORIES */
+
+    .school-subcategories {
+        padding: 40px 15px;
+    }
+
+    .school-subcategory-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .school-section-heading h2 {
+        font-size: 24px;
+    }
+
+    .school-subcategory-info {
+        padding: 10px 3px;
+    }
+
+    .school-subcategory-info h3 {
+        font-size: 13px;
+    }
+
+    .school-subcategory-info span {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .header-top {
+        padding: 0 10px;
+    }
+
+    .header-icons {
+        gap: 9px;
+    }
+
+    .header-icons a {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 520px;
+    }
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .category-card img {
+        height: 210px;
+    }
+
+    .subcategory-card {
+        width: 135px;
+    }
+
+    .subcategory-card img {
+        width: 135px;
+        height: 180px;
+    }
+
+    .product-card h4 {
+        font-size: 12px;
+    }
+
+}
