@@ -1,3 +1,4 @@
 .env
 *.log
 email-config.php
+.vscode/
